@@ -1,91 +1,60 @@
-<!-- Profile README for TrevorBrowning -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Welcome%20to%20My%20Profile!&fontSize=35&fontAlignY=35" width="100%"/>
 
-<h1 align="center">Hey there, I'm Trev 👋</h1>
-<p align="center">🚀 Freelance Developer · Lifelong Learner · Creative Coder</p>
+<div align="center">
+  <a href="HTTPS://TrevorBrowning.com">
+    <img width="100%" src="https://cardivo.vercel.app/api?name=Trev&description=Freelancer%20%7C%20Lifelong%20Learner%20%7C%20Builder%20of%20Things.%20Exploring%20code,%20creativity,%20and%20curiosity%20one%20project%20at%20a%20time.&image=https://raw.githubusercontent.com/TrevorBrowning/TrevorBrowning/main/images/trev-profile-photo.webp&backgroundColor=%2300101F&colorPattern=%23e0e0e0&github=TrevorBrowning&twitter=BrowningRTrevor&" alt="Trev's Card" />
+  </a>
+</div>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=trevorbrowning&style=flat&color=blue" alt="Profile Views" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&color=00FFFF&center=true&vCenter=true&width=435&lines=Freelancer+%7C+Creator+%7C+Forever+Learning;Building+tools+for+fun+and+growth;Fueled+by+curiosity+%26+coffee" alt="Typing SVG" />
 </p>
 
 ---
 
-## About Me
+### About Me
 
-- 🔭 I’m working on: [Flashcard Study App](https://trevorbrowning.com/fcc-flashcards/)
-- 🌱 I’m currently learning: **HTML**, **CSS**, **JavaScript**, and **Python**
-- 👯 I’m open to: Collaborating on open-source and dev challenges
-- 📫 Reach me: [Email](mailto:trevryanbrowning@gmail.com)
-
----
-
-## Tech Stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,python,flask,react" />
-</p>
+> I'm a self-taught dev with a passion for building tools that solve real problems.  
+> I'm currently exploring everything from front-end frameworks and full-stack apps to AI tools and game utilities.  
+> I believe in **learning by building**, and I document my journey one project at a time.  
 
 ---
 
-## GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=trevorbrowning&theme=flat&row=1&column=6" />
-</p>
-
----
-
-## GitHub Streak
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=trevorbrowning&theme=default" alt="GitHub Streak" />
-</p>
-
----
-
-## GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=trevorbrowning&show_icons=true&theme=default" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=trevorbrowning&layout=compact" />
-</p>
-
----
-
-## Connect With Me
+### Find Me Around the Web
 
 <p align="center">
   <a href="https://bsky.app/profile/trevorbrowning.com">
-  <img src="https://img.shields.io/badge/Bluesky-1e90ff?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Bluesky Badge"/>
-</a>
-
-  <a href="https://twitter.com/BrowningRTrevor">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+    <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fbsky.app%2Fprofile%2Ftrevorbrowning.com&subtitle=Bluesky&size=square" />
   </a>
-  <a href="https://trevorbrowning.com">
-    <img src="https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://TrevorBrowning.com">
+    <img src="https://bentos.jkominovic.dev/api/v1/generic-card?icon=website&subtitle=My+Site&size=square" />
+  </a>
+  <a href="https://twitter.com/BrowningRTrevor">
+    <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Ftwitter.com%2FBrowningRTrevor&subtitle=Twitter&size=square" />
   </a>
 </p>
 
 ---
 
-## Featured Projects
-
-- [Flashcard Study App](https://trevorbrowning.com/fcc-flashcards/) – Learn HTML/CSS/JS with smart flashcards  
-- Prompt Generator Hub – AI toolset for creatives *(coming soon)*  
-- Workout Tracker – Personal fitness and routine logger *(in development)*
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&color=ff69b4&style=flat-square&label=Profile+Views" />
+</p>
 
 ---
 
-## Currently Exploring
+### Tech & Tools I Love
 
-<details>
-<summary>More about my tools and focus</summary>
-
-- **Tools**: VS Code, GitHub CLI, Flask, Jekyll  
-- **OS**: Ubuntu + Windows  
-- **Creative interests**: Filmmaking, story/world building, pixel art
-
-</details>
+<p align="center">
+  <img src="https://img.shields.io/badge/Editor-VSCode-blue?style=flat&logo=visual-studio-code" />
+  <img src="https://img.shields.io/badge/Language-JavaScript-yellow?style=flat&logo=javascript" />
+  <img src="https://img.shields.io/badge/Framework-React-blue?style=flat&logo=react" />
+  <img src="https://img.shields.io/badge/Back-End-Python-green?style=flat&logo=python" />
+  <img src="https://img.shields.io/badge/UI-TailwindCSS-teal?style=flat&logo=tailwind-css" />
+  <img src="https://img.shields.io/badge/Tools-Git-orange?style=flat&logo=git" />
+</p>
 
 ---
 
+<h2 align="center">Projects, Challenges, & Creativity in Motion</h2>
+
+<p align="center">Always shipping. Always learning.</p>
