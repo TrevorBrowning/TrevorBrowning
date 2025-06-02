@@ -1,7 +1,7 @@
 <!-- Profile README for TrevorBrowning -->
 
 <h1 align="center">Hey there, I'm Trev 👋</h1>
-<p align="center">🚀 Freelance Developer · Lifelong Learner · Creative Coder</p>
+<p align="center">Freelance Developer · Lifelong Learner · Creative Coder</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=trevorbrowning&style=flat&color=blue" alt="Profile Views" />
@@ -11,10 +11,10 @@
 
 ## About Me
 
-- 🔭 I’m working on: [Flashcard Study App](https://trevorbrowning.com/fcc-flashcards/)
-- 🌱 I’m currently learning: **HTML**, **CSS**, **JavaScript**, and **Python**
-- 👯 I’m open to: Collaborating on open-source and dev challenges
-- 📫 Reach me: [Email](mailto:trevryanbrowning@gmail.com)
+- I’m working on: [Flashcard Study App](https://trevorbrowning.com/fcc-flashcards/)
+- I’m currently learning: **HTML**, **CSS**, **JavaScript**, and **Python**
+- I’m open to: Collaborating on open-source and dev challenges
+- Reach me: [Email](mailto:trevryanbrowning@gmail.com)
 
 ---
 
