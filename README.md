@@ -30,3 +30,10 @@ I'm a freelance developer and lifelong learner currently diving into web dev and
 [![Portfolio](https://img.shields.io/badge/Portfolio-000?style=flat&logo=github&logoColor=white)](https://TrevorBrowning.com)
 
 ---
+
+![Profile Views](https://komarev.com/ghpvc/?username=trevorbrowning&style=flat&color=blue)
+[![trophy](https://github-profile-trophy.vercel.app/?username=trevorbrowning&theme=flat&column=4)](https://github.com/ryo-ma/github-profile-trophy)
+
+
+---
+
