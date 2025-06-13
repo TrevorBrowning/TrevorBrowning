@@ -11,7 +11,7 @@
 
 ## About Me
 
-- I’m working on: [Flashcard Study App](https://trevorbrowning.com/fcc-flashcards/)
+- I’m working on: [Dev Dashboard](https://trevorbrowning.com/dev-dashboard/)
 - I’m currently learning: **HTML**, **CSS**, **JavaScript**, and **Python**
 - I’m open to: Collaborating on open-source and dev challenges
 - Reach me: [Email](mailto:trevryanbrowning@gmail.com)
