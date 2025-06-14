@@ -68,14 +68,6 @@
 
 ---
 
-## Featured Projects
-
-- [Flashcard Study App](https://trevorbrowning.com/fcc-flashcards/) – Learn HTML/CSS/JS with smart flashcards  
-- Prompt Generator Hub – AI toolset for creatives *(coming soon)*  
-- Workout Tracker – Personal fitness and routine logger *(in development)*
-
----
-
 ## Currently Exploring
 
 <details>
