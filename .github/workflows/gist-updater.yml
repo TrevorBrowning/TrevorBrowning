@@ -17,15 +17,14 @@ jobs:
         id: get_gist_content
         uses: andymckay/get-gist-action@master
         with:
-          # IMPORTANT: Use the FULL URL to your public Gist here.
-          # Replace YOUR_USERNAME and YOUR_GIST_ID with your actual details.
+          # Use the FULL URL to your public Gist
           gistURL: https://gist.github.com/TrevorBrowning/1ad666e6792dc86bb852cfc2fc8aca73
       
       - name: Update README with Gist content
-        uses: jamesravey/replace-between-tags-action@1.1.0
+        uses: jamesravey/replace-between-tags-action@v1.1.0
         with:
           path: README.md
-          tags: GIST_STATS # This corresponds to <!-- GIST_STATS:START --> and <!-- GIST_STATS:END -->
+          tags: GIST_STATS
           content: ${{ steps.get_gist_content.outputs.content }}
 
       - name: Commit and Push if changed
@@ -33,4 +32,3 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git diff --quiet || (git add README.md && git commit -m "Update Code Stats from Gist" && git push)
-
