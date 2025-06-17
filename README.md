@@ -48,6 +48,8 @@
   <img src="https://github-readme-stats.vercel.app/api?username=trevorbrowning&show_icons=true&theme=default" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=trevorbrowning&layout=compact" />
 </p>
+<!-- GIST_STATS:START -->
+<!-- GIST_STATS:END -->
 
 ---
 
