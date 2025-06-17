@@ -13,30 +13,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Update README
-        uses: pozetroninc/github-action-get-gist-content@v1
+      # Step 1: Get the content of the Gist
+      - name: Get Gist Content
+        id: get_gist # Give this step an ID so we can reference its output
+        uses: dawidd6/action-get-gist@v1.1
         with:
-          # The ID of the Gist you created
-          gist_id: '1ad666e6792dc86bb852cfc2fc8aca73'
-          # The filename inside the Gist
-          file_name: 'codestats.md'
-          # A Personal Access Token (PAT) with gist scope is required for private gists.
-          # For public gists, it's not strictly necessary but good practice.
-          # Create a repository secret named GIST_PAT to store your token.
-          auth: ${{ secrets.GIST_PAT }}
-          # The start and end markers in your README file
-          start_marker: '<!-- GIST_STATS:START -->'
-          end_marker: '<!-- GIST_STATS:END -->'
-
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff --quiet || git commit -m "Update code stats from Gist"
+          # Your GitHub Personal Access Token
+          token: ${{ secrets.GIST_PAT }}
+          # The ID of your Gist
+          gist_id: 1ad666e6792dc86bb852cfc2fc8aca73 # <-- Make sure to replace this again!
       
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      # Step 2: Update the README.md file with the Gist content
+      - name: Update README
+        uses: anmol098/waka-readme-stats@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          # This action can be used to update any file, not just for WakaTime
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # The ID of the Gist whose content we want to inject
+          GIST_ID: YOUR_GIST_ID_HERE # <-- And replace this one too!
+          # Markers in your README file
+          START_COMMENT: 'GIST_STATS:START'
+          END_COMMENT: 'GIST_STATS:END'
+
