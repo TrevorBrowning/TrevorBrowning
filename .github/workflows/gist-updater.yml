@@ -10,28 +10,27 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 1: Get the content of the Gist
       - name: Get Gist Content
-        id: get_gist # Give this step an ID so we can reference its output
-        uses: dawidd6/action-get-gist@v1.1
+        id: get_gist_content
+        uses: andymckay/get-gist-action@master
         with:
-          # Your GitHub Personal Access Token
-          token: ${{ secrets.GIST_PAT }}
-          # The ID of your Gist
-          gist_id: 1ad666e6792dc86bb852cfc2fc8aca73 # <-- Make sure to replace this again!
+          # IMPORTANT: Use the FULL URL to your public Gist here.
+          # Replace YOUR_USERNAME and YOUR_GIST_ID with your actual details.
+          gistURL: https://gist.github.com/TrevorBrowning/1ad666e6792dc86bb852cfc2fc8aca73
       
-      # Step 2: Update the README.md file with the Gist content
-      - name: Update README
-        uses: anmol098/waka-readme-stats@master
+      - name: Update README with Gist content
+        uses: jamesravey/replace-between-tags-action@1.1.0
         with:
-          # This action can be used to update any file, not just for WakaTime
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # The ID of the Gist whose content we want to inject
-          GIST_ID: YOUR_GIST_ID_HERE # <-- And replace this one too!
-          # Markers in your README file
-          START_COMMENT: 'GIST_STATS:START'
-          END_COMMENT: 'GIST_STATS:END'
+          path: README.md
+          tags: GIST_STATS # This corresponds to <!-- GIST_STATS:START --> and <!-- GIST_STATS:END -->
+          content: ${{ steps.get_gist_content.outputs.content }}
+
+      - name: Commit and Push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git diff --quiet || (git add README.md && git commit -m "Update Code Stats from Gist" && git push)
 
