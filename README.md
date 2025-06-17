@@ -49,6 +49,7 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=trevorbrowning&layout=compact" />
 </p>
 <!-- GIST_STATS:START -->
+Loading...
 <!-- GIST_STATS:END -->
 
 ---
