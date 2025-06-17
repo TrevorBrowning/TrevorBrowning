@@ -48,9 +48,6 @@
   <img src="https://github-readme-stats.vercel.app/api?username=trevorbrowning&show_icons=true&theme=default" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=trevorbrowning&layout=compact" />
 </p>
-<p align="center">
-https://raw.githubusercontent.com/trevorbrowning/trevorbrowning/output/pacman-contribution-graph.svg
-</p>
 
 ---
 
