@@ -1,0 +1,42 @@
+name: Update README with Gist Content
+
+on:
+  schedule:
+    # Runs every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Update README
+        uses: pozetroninc/github-action-get-gist-content@v1
+        with:
+          # The ID of the Gist you created
+          gist_id: '1ad666e6792dc86bb852cfc2fc8aca73'
+          # The filename inside the Gist
+          file_name: 'codestats.md'
+          # A Personal Access Token (PAT) with gist scope is required for private gists.
+          # For public gists, it's not strictly necessary but good practice.
+          # Create a repository secret named GIST_PAT to store your token.
+          auth: ${{ secrets.GIST_PAT }}
+          # The start and end markers in your README file
+          start_marker: '<!-- GIST_STATS:START -->'
+          end_marker: '<!-- GIST_STATS:END -->'
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --quiet || git commit -m "Update code stats from Gist"
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
