@@ -1,31 +1,53 @@
 name: Update README with Gist Content
 
 on:
-  # This runs the workflow every hour
+  # Runs every hour
   schedule:
     - cron: '0 * * * *'
-  # This allows you to run it manually from the Actions tab
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the repository
+      # Step 1: Check out your repository so the workflow can access your README.md
+      - name: Checkout repository
         uses: actions/checkout@v3
-      
-      - name: Update README with Gist content
-        uses: anmol098/readme-gist@master
-        with:
-          # The ID of your public Gist
-          id: YOUR_GIST_ID_HERE
 
-          # Your GitHub Personal Access Token, stored in a repository secret
-          token: ${{ secrets.GIST_PAT }}
+      # Step 2: Download the raw HTML content of your Gist and save it to a file
+      # This uses 'curl', a basic tool guaranteed to be on the runner.
+      # IMPORTANT: Make sure the Gist ID in this URL is correct.
+      - name: Download Gist Content
+        run: curl -sL "https://gist.githubusercontent.com/TrevorBrowning/1ad666e6792dc86bb852cfc2fc8aca73/raw" -o stats.html
 
-          # The file in your repository to update
-          file: README.md
+      # Step 3: Use Python (also guaranteed) to replace the content in the README
+      - name: Update README file
+        run: |
+          import re
+          # Read the new stats content from the downloaded file
+          with open('stats.html', 'r') as f:
+              stats_content = f.read()
+          # Read the existing README content
+          with open('README.md', 'r') as f:
+              readme_content = f.read()
+          
+          # Use regex to find the block and replace its contents
+          # The '(s?)' flag allows '.' to match newlines, which is crucial
+          new_readme = re.sub(
+              r'(?s)<!-- GIST_STATS:START -->.*<!-- GIST_STATS:END -->',
+              f'<!-- GIST_STATS:START -->\n{stats_content}\n<!-- GIST_STATS:END -->',
+              readme_content
+          )
 
-          # The comment markers in your README file
-          comment_start: '<!-- GIST_STATS:START -->'
-          comment_end: '<!-- GIST_STATS:END -->'
+          # Write the updated content back to the README file
+          with open('README.md', 'w') as f:
+              f.write(new_readme)
+        shell: python
+
+      # Step 4: Commit the updated README.md and push to your repository
+      - name: Commit and Push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git diff --quiet || (git add README.md && git commit -m "Update Code Stats from Gist" && git push)
