@@ -1,0 +1,24 @@
+name: Update Code::Stats Readme
+
+on:
+  schedule:
+    # Runs every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    name: Update Readme with Code::Stats
+    runs-on: ubuntu-latest
+    steps:
+      - uses: jdecked/pull-code-stats-action@main
+        with:
+          # Your Code::Stats username
+          user: TrevorBrowning 
+          # The API key you stored as a secret
+          api_key: ${{ secrets.CODE_STATS_API_KEY }} 
+          # The start and end markers in your README
+          start_comment: '<!-- CODESTATS:START -->'
+          end_comment: '<!-- CODESTATS:END -->'
+          # Optional: show a graph of recent activity
+          show_graph: "true"
