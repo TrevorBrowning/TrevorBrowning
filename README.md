@@ -50,6 +50,13 @@
 </p>
 
 <!-- CODESTATS:START -->
+#### 💻 My Coding Stats
+
+**Total XP:** 8
+
+**Top Languages:**
+- JSON: 8 XP
+
 <!-- CODESTATS:END -->
 ---
 
