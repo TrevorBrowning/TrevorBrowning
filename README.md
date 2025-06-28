@@ -11,8 +11,9 @@
 
 ## About Me
 
-- I’m working on: [Dev Dashboard](https://github.com/TrevorBrowning/dev-dashboard) | [Glas Suile](https://www.github.com/TrevorBrowning/glas-suile)
+- I’m working on: [Dev Dashboard](https://github.com/TrevorBrowning/dev-dashboard)
 - Recently Built:
+  - [Glas Suile API](https://www.github.com/TrevorBrowning/glas-suile)
   - [Snippet Editor](https://www.trevorbrowning.com/snippet-editor)
 - I’m currently learning: **HTML**, **CSS**, **JavaScript**, and **Python**
 - I’m open to: Collaborating on open-source and dev challenges
