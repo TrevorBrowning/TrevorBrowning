@@ -13,9 +13,9 @@
 
 - I’m working on: [Dev Dashboard](https://github.com/TrevorBrowning/dev-dashboard)
 - Recently Built:
-  - [MarkCanvas](https://www.trevorbrowning.com/MarkCanvas) - A Full Markdown Editor w/ Templates
+  - [Prolific Sidebar Toggle](https://github.com/TrevorBrowning/prolific-projects-sidebar-toggle)
   - [Glas Suile API](https://www.github.com/TrevorBrowning/glas-suile)
-  - [Snippet Editor](https://www.trevorbrowning.com/snippet-editor)
+  - 
 
 - I’m open to: Collaborating on open-source and dev challenges
 - Reach me: [Email](mailto:trevryanbrowning@gmail.com)
