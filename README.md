@@ -11,7 +11,10 @@
 
 ## About Me
 
-- I’m working on: [Dev Dashboard](https://github.com/TrevorBrowning/dev-dashboard)
+- I’m working on:
+- [RPG Character Engine](https://github.com/TrevorBrowning/rpg-character-engine)
+- [Dev Dashboard](https://github.com/TrevorBrowning/dev-dashboard)
+
 - Recently Built:
   - [Prolific Sidebar Toggle](https://github.com/TrevorBrowning/prolific-projects-sidebar-toggle)
   - [Glas Suile API](https://www.github.com/TrevorBrowning/glas-suile)
