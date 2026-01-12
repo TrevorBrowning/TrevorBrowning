@@ -1,7 +1,7 @@
 <!-- Profile README for TrevorBrowning -->
 
-<h1 align="center">Hey there, I'm Trev 👋</h1>
-<p align="center">Freelance Developer · Lifelong Learner · Creative Coder</p>
+<h1 align="center">Hey there, I'm Trev</h1>
+<p align="center">Freelance Developer · Filmmaker</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=trevorbrowning&style=flat&color=blue" alt="Profile Views" />
