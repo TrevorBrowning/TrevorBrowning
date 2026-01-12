@@ -29,7 +29,7 @@
 ## Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,python,flask,react,vue,express,mongodb,csharp" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,python,flask,react,vue,express,mongodb,cs" />
 </p>
 
 ---
