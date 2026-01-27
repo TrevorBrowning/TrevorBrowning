@@ -15,6 +15,7 @@
 - [Dev Dashboard](https://github.com/TrevorBrowning/dev-dashboard)
 
 - Recently Built:
+  - [Retro Scoreboard RPS](https://github.com/TrevorBrowning/retro-scoreboard-rps)
   - [Prolific Sidebar Toggle](https://github.com/TrevorBrowning/prolific-projects-sidebar-toggle)
   - [Glas Suile API](https://www.github.com/TrevorBrowning/glas-suile)
   - 
